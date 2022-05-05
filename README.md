@@ -80,3 +80,9 @@ You can access to Postman Collection for test API manually.
 
 Get here:
 https://www.getpostman.com/collections/47d4bfe882b992500887
+
+## Unit test
+
+You can run unit tests with:
+
+	$ npm run test
