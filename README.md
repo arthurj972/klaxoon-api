@@ -81,6 +81,10 @@ You can access to Postman Collection for test API manually.
 Get here:
 https://www.getpostman.com/collections/47d4bfe882b992500887
 
+You must open Postman app and go to Import and choose "Link"
+![Exemple d'importation](https://live.staticflickr.com/65535/52051024902_5e7b911ff3_b.jpg)
+
+
 ## Unit test
 
 You can run unit tests with:
