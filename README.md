@@ -90,3 +90,14 @@ You must open Postman app and go to Import and choose "Link"
 You can run unit tests with:
 
 	$ npm run test
+
+This command calling all files on `test/unit` directory like `bookmark.controller.test.ts`.
+
+
+## ESLint & Prettier
+
+You can run ESLint with:
+
+	$ npm run lint
+
+This command automatically fix errors on files with Prettier.
