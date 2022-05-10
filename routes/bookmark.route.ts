@@ -1,12 +1,13 @@
 import { Router } from 'express';
+
+import BookmarkController from '../controllers/bookmark.controller';
+
 export const router = Router();
 
-const bookmarkController = require('../controllers/bookmark.controller');
+router.post('/', BookmarkController.addBookmark);
+router.get('/', BookmarkController.getBookmarks);
+router.get('/:id', BookmarkController.getBookmark);
+router.put('/:id', BookmarkController.editBookmark);
+router.delete('/:id', BookmarkController.deleteBookmark);
 
-router.post('/', bookmarkController.addBookmark);
-router.get('/', bookmarkController.getBookmarks);
-router.get('/:id', bookmarkController.getBookmark);
-router.put('/:id', bookmarkController.editBookmark);
-router.delete('/:id', bookmarkController.deleteBookmark);
-
-module.exports = router;
+export default router;

@@ -1,5 +1,5 @@
-const appExpress = require('./app');
+import app from './app';
 
-appExpress.listen(process.env.PORT, () => {
+app.listen(process.env.PORT, () => {
 	console.log(`Klaxoon API listening on http://localhost:${process.env.PORT}`);
 });
