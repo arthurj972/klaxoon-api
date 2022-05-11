@@ -52,7 +52,7 @@ The following files are important:
 - `app.ts` is the global app.
 - `server.ts` just launch the API.
 - `package.json`
-- `utils/database.ts`
+- `db/config.ts`
 - `routes/bookmark.route.ts` for routes.
 - `controllers/bookmark.controller.ts` for route controllers.
 - `dist/` is automatically created folder for `.js` compile.
