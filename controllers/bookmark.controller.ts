@@ -1,11 +1,9 @@
 import { Request, Response } from 'express';
 import Joi from 'joi';
-import moment from 'moment';
+import { parseISO } from 'date-fns';
 import axios from 'axios';
 import * as service from '../services/bookmark.service';
 import { BookmarkInput } from '../db/models/Bookmark';
-
-moment.locale(process.env.LOCALE);
 
 export default {
 	async addBookmark (req: Request, res: Response) {
@@ -38,7 +36,7 @@ export default {
 								author: data.author_name,
 								thumbnail: data.thumbnail_url,
 								upload_date: data.upload_date
-									? moment(data.upload_date, 'YYYY-MM-DD HH:mm:ss').toDate()
+									? parseISO(data.upload_date)
 									: null,
 								type: data.type,
 								width: data.width,
